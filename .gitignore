@@ -1,0 +1,16 @@
+.env
+**/.env
+node_modules/
+Vozmozhnosti/telegram-config.js
+
+# Telegram bot — секреты и локальные данные
+bot/.env
+bot/bot.db
+bot/service_account.json
+bot/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
