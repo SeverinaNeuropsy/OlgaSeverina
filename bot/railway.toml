@@ -1,0 +1,8 @@
+# Telegram-бот (Python): в Railway создайте отдельный сервис, Root Directory = bot
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python main.py"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10

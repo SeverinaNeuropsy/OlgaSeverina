@@ -1,0 +1,8 @@
+# Веб-сайт (Node): в Railway у сервиса Root Directory = / (корень репозитория)
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10

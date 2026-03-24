@@ -40,6 +40,7 @@ await loadDotEnv();
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const PORT = Number(process.env.PORT || 5173);
+const HOST = process.env.HOST || "0.0.0.0";
 
 if (!BOT_TOKEN || !CHAT_ID) {
   console.log("Не хватает переменных окружения.");
@@ -193,8 +194,8 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log(`Сервер запущен: http://127.0.0.1:${PORT}/`);
+server.listen(PORT, HOST, () => {
+  console.log(`Сервер запущен: http://${HOST}:${PORT}/`);
   console.log("Откройте /main.html или просто корень.");
 });
 
