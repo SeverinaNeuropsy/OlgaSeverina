@@ -32,6 +32,12 @@
 
 4. **Deploy**. Сервис без HTTP — это нормально: процесс должен работать постоянно (`python main.py`).
 
+## 3. Expo-приложение «Мама-Супер!» (`Prilozhenie`)
+
+1. **New** → тот же или отдельный проект → репозиторий с папкой приложения.
+2. **Settings → Root Directory** = `Prilozhenie` (имя папки как в Git).
+3. **Deploy**. Сборка: `npm run build` (статический веб-экспорт в `dist`), запуск: отдача `dist` через `serve`. Подробности: **`Prilozhenie/RAILWAY.md`**. Нативный **Expo Go** по-прежнему с ПК: `npx expo start`.
+
 ## Заметки
 
 - Файлы `.env` в Git не попадают — всё секретное только в **Variables** на Railway.

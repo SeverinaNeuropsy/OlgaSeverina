@@ -1,0 +1,9 @@
+# Railway: установите Root Directory = Prilozhenie (или PRILOZHENIE, если так назвали папку в репозитории).
+# Собирается веб-сборка Expo (React Native Web), отдаётся как статика — удобно открыть в Safari/Chrome.
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npx serve dist -s -l tcp://0.0.0.0:$PORT"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
